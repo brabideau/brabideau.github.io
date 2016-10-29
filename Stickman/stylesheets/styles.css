@@ -1,0 +1,317 @@
+body {
+	
+}
+
+.setting {
+	position: relative;
+	height: 500px;
+	width: 1000px;
+	margin: 50px auto;
+	background: #abcdef;
+	overflow: hidden;
+}
+
+
+.ground {
+	position: absolute;
+	top: 450px;
+	height: 50px;
+	width: 100%;
+	background: #56a902;
+}
+
+
+.go-right {
+	position: absolute;
+	top: 50px;
+	height: 400px;
+	width: 200px;
+	-webkit-animation-name: goRight;
+	        animation-name: goRight;
+	-webkit-animation-duration: 8s;
+	        animation-duration: 8s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+}
+
+
+.body-movement {
+	position: relative;
+	height: 400px;
+	width: 200px;
+	-webkit-animation-name: bodyMovement;
+	        animation-name: bodyMovement;
+	-webkit-animation-duration: .75s;
+	        animation-duration: .75s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-delay: .18s;
+	        animation-delay: .18s;
+}
+
+
+.head {
+	box-sizing: border-box;
+	height: 75px;
+	width: 75px;
+	margin: 0 auto;
+	border: 5px solid black;
+	background: white;
+	border-radius: 50%;
+}
+
+.torso {
+
+	height: 150px;
+	width: 50%;
+	border-right: 5px solid black;
+}
+
+
+.spacer {
+	position: relative;
+	height: 50%;
+}
+
+.left, .left .forearm-wrap {
+	-webkit-animation-delay: .75s;
+	        animation-delay: .75s;
+}
+
+/*--------------------------------------  LEG  ---------------*/
+
+.leg-wrap {
+	position: absolute;
+	height: 350px;
+	width: 200px;
+	top: 50px;
+	-webkit-animation-name: legWrap;
+	        animation-name: legWrap;
+	-webkit-animation-duration: 1.5s;
+	        animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+
+.thigh {
+
+	width: 50%;
+	height: 50%;
+	border-right: 5px solid black;
+}
+
+
+.shin-wrap {
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	-webkit-animation-name: shinWrap;
+	        animation-name: shinWrap;
+	-webkit-animation-duration: 1.5s;
+	        animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-delay: 1.35s;
+	        animation-delay: 1.35s;
+}
+
+.left .shin-wrap {
+	-webkit-animation-delay: .6s;
+	        animation-delay: .6s;
+}
+
+.shin {
+	position: relative;
+	top: 50%;
+	height: 50%;
+	width: 50%;
+	border-right: 5px solid black;
+}
+
+/*--------------------------------------  ARM  ---------------*/
+
+
+.arm-wrap {
+	position: absolute;
+	height: 300px;
+	width: 200px;
+	top: -65px;
+	-webkit-animation-name: armWrap;
+	        animation-name: armWrap;
+	-webkit-animation-duration: 1.5s;
+	        animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+
+.up-arm {
+	width: 50%;
+	height: 50%;
+	border-right: 5px solid black;
+}
+
+
+.forearm-wrap {
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	-webkit-animation-name: forearmWrap;
+	        animation-name: forearmWrap;
+	-webkit-animation-duration: 1.5s;
+	        animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+
+.forearm {
+	position: relative;
+	top: 50%;
+	height: 50%;
+	width: 50%;
+	border-right: 5px solid black;
+
+}
+
+/*-----------------------------------   GRASS  ----------------*/
+.grass-wrap {
+	display: inline-block;
+	position: relative;
+	top: 440px;
+	margin-right: 70px;
+	-webkit-animation-name: grassWrap;
+	        animation-name: grassWrap;
+	-webkit-animation-duration: 12.5s;
+	        animation-duration: 12.5s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+}
+
+
+
+.grasses .grass-wrap:last-of-type {
+	top: 456px;
+	-webkit-animation-duration: 11s;
+	        animation-duration: 11s;
+}
+
+.grasses .grass-wrap:first-of-type {
+	top: 476px;
+	-webkit-animation-duration: 9s;
+	        animation-duration: 9s;
+}
+
+
+
+.grass {
+	display: inline-block;
+	height: 0px;
+	width: 0px;
+	margin-left: -6px;
+	border-bottom: 15px solid #508020;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+
+}
+
+
+
+/*-----------------------------------   ANIMATIONS  ----------------*/
+
+@-webkit-keyframes goRight{
+0% {-webkit-transform: translateX(-200px);transform: translateX(-200px);}
+100% {-webkit-transform: translateX(1000px);transform: translateX(1000px);}
+}
+
+@keyframes goRight{
+0% {-webkit-transform: translateX(-200px);transform: translateX(-200px);}
+100% {-webkit-transform: translateX(1000px);transform: translateX(1000px);}
+}
+
+@-webkit-keyframes grassWrap{
+0% {-webkit-transform: translateX(1000px);transform: translateX(1000px);}
+100% {-webkit-transform: translateX(-200px);transform: translateX(-200px);}
+}
+
+@keyframes grassWrap{
+0% {-webkit-transform: translateX(1000px);transform: translateX(1000px);}
+100% {-webkit-transform: translateX(-200px);transform: translateX(-200px);}
+}
+
+@-webkit-keyframes bodyMovement{
+0% {-webkit-transform: translateX(0px) translateY(5px);transform: translateX(0px) translateY(5px);}
+60% {-webkit-transform: translateX(10px) translateY(0px);transform: translateX(10px) translateY(0px);}
+100% {-webkit-transform: translateX(0px) translateY(5px);transform: translateX(0px) translateY(5px);}
+}
+
+@keyframes bodyMovement{
+0% {-webkit-transform: translateX(0px) translateY(5px);transform: translateX(0px) translateY(5px);}
+60% {-webkit-transform: translateX(10px) translateY(0px);transform: translateX(10px) translateY(0px);}
+100% {-webkit-transform: translateX(0px) translateY(5px);transform: translateX(0px) translateY(5px);}
+}
+
+
+
+@-webkit-keyframes legWrap{
+0% {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+50% {-webkit-transform: rotate(-30deg);transform: rotate(-30deg);}
+100% {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+}
+
+
+
+@keyframes legWrap{
+0% {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+50% {-webkit-transform: rotate(-30deg);transform: rotate(-30deg);}
+100% {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+}
+
+@-webkit-keyframes shinWrap{
+0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+50% {-webkit-transform: rotate(45deg);transform: rotate(45deg);}
+100% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+}
+
+@keyframes shinWrap{
+0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+50% {-webkit-transform: rotate(45deg);transform: rotate(45deg);}
+100% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+}
+
+
+@-webkit-keyframes armWrap{
+0% {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+50% {-webkit-transform: rotate(-10deg);transform: rotate(-10deg);}
+100% {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+}
+
+
+@keyframes armWrap{
+0% {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+50% {-webkit-transform: rotate(-10deg);transform: rotate(-10deg);}
+100% {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+}
+
+@-webkit-keyframes forearmWrap{
+0% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+50% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+100% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+}
+
+@keyframes forearmWrap{
+0% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+50% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+100% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+}
+
+
+
+
