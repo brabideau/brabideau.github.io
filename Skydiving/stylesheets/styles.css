@@ -1,0 +1,607 @@
+body {
+	
+}
+
+.setting {
+	position: relative;
+	height: 700px;
+	width: 600px;
+	margin: 50px auto;
+	background: #abcdef;
+	overflow: hidden;
+}
+
+div {
+	-webkit-animation-duration: 15s;
+	        animation-duration: 15s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+.stickman {
+	position: absolute;
+	height: 400px;
+	width: 200px;
+    -webkit-animation-name: stickman;
+            animation-name: stickman;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+
+@-webkit-keyframes stickman{
+0% {-webkit-animation-timing-function: ease-out;animation-timing-function: ease-out;
+	-webkit-transform: translateX(300px) translateY(-300px) scaleX(.7) scaleY(.7);
+	        transform: translateX(300px) translateY(-300px) scaleX(.7) scaleY(.7);}
+60% {-webkit-transform: translateX(200px) translateY(350px) scaleX(.9) scaleY(.9);transform: translateX(200px) translateY(350px) scaleX(.9) scaleY(.9);}
+100% {-webkit-transform: translateX(150px) translateY(-300px) scaleX(0) scaleY(0);transform: translateX(150px) translateY(-300px) scaleX(0) scaleY(0);}
+}
+
+
+@keyframes stickman{
+0% {-webkit-animation-timing-function: ease-out;animation-timing-function: ease-out;
+	-webkit-transform: translateX(300px) translateY(-300px) scaleX(.7) scaleY(.7);
+	        transform: translateX(300px) translateY(-300px) scaleX(.7) scaleY(.7);}
+60% {-webkit-transform: translateX(200px) translateY(350px) scaleX(.9) scaleY(.9);transform: translateX(200px) translateY(350px) scaleX(.9) scaleY(.9);}
+100% {-webkit-transform: translateX(150px) translateY(-300px) scaleX(0) scaleY(0);transform: translateX(150px) translateY(-300px) scaleX(0) scaleY(0);}
+}
+
+
+.body-movement {
+	position: relative;
+	height: 100%;
+	-webkit-animation-name: bodyMovement;
+	        animation-name: bodyMovement;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+}
+
+@-webkit-keyframes bodyMovement{
+0% {-webkit-transform: rotate(-220deg);transform: rotate(-220deg);}
+56% {-webkit-transform: rotate(96deg);transform: rotate(96deg);}
+60% {-webkit-transform: rotate(80deg);transform: rotate(80deg);}
+65% {-webkit-transform: rotate(0deg);transform: rotate(0deg);
+-webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;}
+80% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+100% {-webkit-transform: rotate(5deg);transform: rotate(5deg);}
+}
+
+@keyframes bodyMovement{
+0% {-webkit-transform: rotate(-220deg);transform: rotate(-220deg);}
+56% {-webkit-transform: rotate(96deg);transform: rotate(96deg);}
+60% {-webkit-transform: rotate(80deg);transform: rotate(80deg);}
+65% {-webkit-transform: rotate(0deg);transform: rotate(0deg);
+-webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;}
+80% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+100% {-webkit-transform: rotate(5deg);transform: rotate(5deg);}
+}
+
+.head {
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 37.5%;
+	height: 18.75%;
+	border: 5px solid black;
+	background: white;
+	border-radius: 50%;
+}
+
+.torso {
+	height: 37.5%;
+	width: 50%;
+	border-right: 5px solid black;
+}
+
+.spacer {
+	position: relative;
+	height: 50%;
+}
+
+
+
+/*-------------------------------- STUFF ----------------------------*/
+
+
+.backpack {
+	position: absolute;
+	right: 50%;
+	top: 23%;
+	background: #337719;
+	border: 3px solid #1a5519;
+	width: 10%;
+	height: 15%;
+	border-radius: 7px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.cord {
+	border-top: 1px solid black;
+	width: 60px;
+	position: relative;
+	top: -36%;
+	left: 50%;
+	-webkit-animation-name: Cord;
+	        animation-name: Cord;
+}
+
+@-webkit-keyframes Cord{
+0% {-webkit-transform: scaleX(0) scaleY(0);transform: scaleX(0) scaleY(0); }
+59% {-webkit-transform: scaleX(0) scaleY(0);transform: scaleX(0) scaleY(0); }
+60% {-webkit-transform: scaleX(1) scaleY(1);transform: scaleX(1) scaleY(1); }
+61% {-webkit-transform: scaleX(0) scaleY(0);transform: scaleX(0) scaleY(0); }
+100% {-webkit-transform: scaleX(0) scaleY(0);transform: scaleX(0) scaleY(0); }
+}
+
+@keyframes Cord{
+0% {-webkit-transform: scaleX(0) scaleY(0);transform: scaleX(0) scaleY(0); }
+59% {-webkit-transform: scaleX(0) scaleY(0);transform: scaleX(0) scaleY(0); }
+60% {-webkit-transform: scaleX(1) scaleY(1);transform: scaleX(1) scaleY(1); }
+61% {-webkit-transform: scaleX(0) scaleY(0);transform: scaleX(0) scaleY(0); }
+100% {-webkit-transform: scaleX(0) scaleY(0);transform: scaleX(0) scaleY(0); }
+}
+
+
+.parachute-wrap {
+	position: absolute;
+	left: -50%;
+	top: 7%;
+	height: 200px;
+	width: 400px;
+	-webkit-animation-name: Parachute;
+	        animation-name: Parachute;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+}
+
+
+@-webkit-keyframes Parachute{
+0% {-webkit-transform: scaleX(0) scaleY(0) translateY(0px);transform: scaleX(0) scaleY(0) translateY(0px);}
+61% {-webkit-transform: scaleX(0) scaleY(0) translateY(0px);transform: scaleX(0) scaleY(0) translateY(0px);}
+67% {-webkit-transform: scaleX(1) scaleY(1) translateY(-500px);transform: scaleX(1) scaleY(1) translateY(-500px);}
+100% {-webkit-transform: scaleX(1) scaleY(1) translateY(-500px);transform: scaleX(1) scaleY(1) translateY(-500px);}
+}
+
+
+@keyframes Parachute{
+0% {-webkit-transform: scaleX(0) scaleY(0) translateY(0px);transform: scaleX(0) scaleY(0) translateY(0px);}
+61% {-webkit-transform: scaleX(0) scaleY(0) translateY(0px);transform: scaleX(0) scaleY(0) translateY(0px);}
+67% {-webkit-transform: scaleX(1) scaleY(1) translateY(-500px);transform: scaleX(1) scaleY(1) translateY(-500px);}
+100% {-webkit-transform: scaleX(1) scaleY(1) translateY(-500px);transform: scaleX(1) scaleY(1) translateY(-500px);}
+}
+
+
+.parachute {
+	position: relative;
+	display: inline-block;
+	border-radius: 50%;
+	background: #cc4488;
+	height: 100%;
+	width: 30%;
+	margin-left: -11%;
+
+}
+
+
+
+/*--------------------------------------  LEG  ---------------*/
+
+.leg-wrap, .left-leg-wrap {
+	position: absolute;
+	height: 87.5%;
+	width: 100%;
+	top: 12.5%;
+
+}
+
+.thigh {
+	width: 50%;
+	height: 50%;
+	border-right: 5px solid black;
+}
+
+.shin-wrap, .left-shin-wrap {
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.shin {
+	position: relative;
+	top: 50%;
+	height: 50%;
+	width: 50%;
+	border-right: 5px solid black;
+}
+
+
+.leg-wrap {
+	-webkit-animation-name: legWrap;
+	        animation-name: legWrap;
+}
+
+.shin-wrap {
+    -webkit-animation-name: shinWrap;
+            animation-name: shinWrap;
+}
+
+@-webkit-keyframes legWrap{
+0% {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+20% {-webkit-transform: rotate(-110deg);transform: rotate(-110deg);}
+30% {-webkit-transform: rotate(-120deg);transform: rotate(-120deg);}
+40% {-webkit-transform: rotate(-98deg);transform: rotate(-98deg);}
+60% {-webkit-transform: rotate(-27deg);transform: rotate(-27deg);}
+80% {-webkit-transform: rotate(9deg);transform: rotate(9deg);}
+100% {-webkit-transform: rotate(-10deg);transform: rotate(-10deg);}
+}
+
+@keyframes legWrap{
+0% {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+20% {-webkit-transform: rotate(-110deg);transform: rotate(-110deg);}
+30% {-webkit-transform: rotate(-120deg);transform: rotate(-120deg);}
+40% {-webkit-transform: rotate(-98deg);transform: rotate(-98deg);}
+60% {-webkit-transform: rotate(-27deg);transform: rotate(-27deg);}
+80% {-webkit-transform: rotate(9deg);transform: rotate(9deg);}
+100% {-webkit-transform: rotate(-10deg);transform: rotate(-10deg);}
+}
+
+@-webkit-keyframes shinWrap{
+0% {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+20% {-webkit-transform: rotate(130deg);transform: rotate(130deg);}
+30% {-webkit-transform: rotate(50deg);transform: rotate(50deg);}
+40% {-webkit-transform: rotate(98deg);transform: rotate(98deg);}
+60% {-webkit-transform: rotate(27deg);transform: rotate(27deg);}
+70% {-webkit-transform: rotate(30deg);transform: rotate(30deg);}
+80% {-webkit-transform: rotate(9deg);transform: rotate(9deg);}
+90% {-webkit-transform: rotate(30deg);transform: rotate(30deg);}
+100% {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+}
+
+@keyframes shinWrap{
+0% {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+20% {-webkit-transform: rotate(130deg);transform: rotate(130deg);}
+30% {-webkit-transform: rotate(50deg);transform: rotate(50deg);}
+40% {-webkit-transform: rotate(98deg);transform: rotate(98deg);}
+60% {-webkit-transform: rotate(27deg);transform: rotate(27deg);}
+70% {-webkit-transform: rotate(30deg);transform: rotate(30deg);}
+80% {-webkit-transform: rotate(9deg);transform: rotate(9deg);}
+90% {-webkit-transform: rotate(30deg);transform: rotate(30deg);}
+100% {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+}
+
+.left-leg-wrap {
+    -webkit-animation-name: leftLegWrap;
+            animation-name: leftLegWrap;
+}
+
+.left-shin-wrap {
+    -webkit-animation-name: leftShinWrap;
+            animation-name: leftShinWrap;
+}
+
+
+@-webkit-keyframes leftLegWrap{
+0% {-webkit-transform: rotate(-22deg);transform: rotate(-22deg);}
+17% {-webkit-transform: rotate(-97deg);transform: rotate(-97deg);}
+27% {-webkit-transform: rotate(-120deg);transform: rotate(-120deg);}
+39% {-webkit-transform: rotate(-90deg);transform: rotate(-90deg);}
+60% {-webkit-transform: rotate(-27deg);transform: rotate(-27deg);}
+70% {-webkit-transform: rotate(9deg);transform: rotate(9deg);}
+86% {-webkit-transform: rotate(12deg);transform: rotate(12deg);}
+100% {-webkit-transform: rotate(-17deg);transform: rotate(-17deg);}
+}
+
+
+@keyframes leftLegWrap{
+0% {-webkit-transform: rotate(-22deg);transform: rotate(-22deg);}
+17% {-webkit-transform: rotate(-97deg);transform: rotate(-97deg);}
+27% {-webkit-transform: rotate(-120deg);transform: rotate(-120deg);}
+39% {-webkit-transform: rotate(-90deg);transform: rotate(-90deg);}
+60% {-webkit-transform: rotate(-27deg);transform: rotate(-27deg);}
+70% {-webkit-transform: rotate(9deg);transform: rotate(9deg);}
+86% {-webkit-transform: rotate(12deg);transform: rotate(12deg);}
+100% {-webkit-transform: rotate(-17deg);transform: rotate(-17deg);}
+}
+
+
+@-webkit-keyframes leftShinWrap{
+0% {-webkit-transform: rotate(90deg);transform: rotate(90deg);}
+10% {-webkit-transform: rotate(121deg);transform: rotate(121deg);}
+20% {-webkit-transform: rotate(145deg);transform: rotate(145deg);}
+30% {-webkit-transform: rotate(123deg);transform: rotate(123deg);}
+40% {-webkit-transform: rotate(99deg);transform: rotate(99deg);}
+50% {-webkit-transform: rotate(70deg);transform: rotate(70deg);}
+60% {-webkit-transform: rotate(33deg);transform: rotate(33deg);}
+80% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+100% {-webkit-transform: rotate(45deg);transform: rotate(45deg);}
+}
+
+
+@keyframes leftShinWrap{
+0% {-webkit-transform: rotate(90deg);transform: rotate(90deg);}
+10% {-webkit-transform: rotate(121deg);transform: rotate(121deg);}
+20% {-webkit-transform: rotate(145deg);transform: rotate(145deg);}
+30% {-webkit-transform: rotate(123deg);transform: rotate(123deg);}
+40% {-webkit-transform: rotate(99deg);transform: rotate(99deg);}
+50% {-webkit-transform: rotate(70deg);transform: rotate(70deg);}
+60% {-webkit-transform: rotate(33deg);transform: rotate(33deg);}
+80% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+100% {-webkit-transform: rotate(45deg);transform: rotate(45deg);}
+}
+
+
+
+/*--------------------------------------  ARM  ---------------*/
+
+
+.arm-wrap, .left-arm-wrap {
+	position: absolute;
+	height: 75%;
+	width: 100%;
+	top: -15%;
+ }
+
+ .up-arm {
+	width: 50%;
+	height: 50%;
+	border-right: 5px solid black;
+}
+
+
+.forearm-wrap, .left-forearm-wrap {
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+
+.forearm {
+	position: relative;
+	top: 50%;
+	height: 50%;
+	width: 50%;
+	border-right: 5px solid black;
+}
+
+/* ------- RIGHT ARM -------------*/
+
+.arm-wrap {
+	-webkit-animation-name: armWrap;
+	        animation-name: armWrap;
+}
+
+
+@-webkit-keyframes armWrap{
+0% {-webkit-transform: rotate(-130deg);transform: rotate(-130deg);}
+10% {-webkit-transform: rotate(-180deg);transform: rotate(-180deg);}
+20% {-webkit-transform: rotate(-155deg);transform: rotate(-155deg);}
+30% {-webkit-transform: rotate(-185deg);transform: rotate(-185deg);}
+40% {-webkit-transform: rotate(-151deg);transform: rotate(-151deg);}
+50% {-webkit-transform: rotate(-99deg);transform: rotate(-99deg);}
+60% {-webkit-transform: rotate(-30deg);transform: rotate(-30deg);}
+70% {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+80% {-webkit-transform: rotate(-10deg);transform: rotate(-10deg);}
+90% {-webkit-transform: rotate(7deg);transform: rotate(7deg);}
+100% {-webkit-transform: rotate(-22deg);transform: rotate(-22deg);}
+}
+
+
+@keyframes armWrap{
+0% {-webkit-transform: rotate(-130deg);transform: rotate(-130deg);}
+10% {-webkit-transform: rotate(-180deg);transform: rotate(-180deg);}
+20% {-webkit-transform: rotate(-155deg);transform: rotate(-155deg);}
+30% {-webkit-transform: rotate(-185deg);transform: rotate(-185deg);}
+40% {-webkit-transform: rotate(-151deg);transform: rotate(-151deg);}
+50% {-webkit-transform: rotate(-99deg);transform: rotate(-99deg);}
+60% {-webkit-transform: rotate(-30deg);transform: rotate(-30deg);}
+70% {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+80% {-webkit-transform: rotate(-10deg);transform: rotate(-10deg);}
+90% {-webkit-transform: rotate(7deg);transform: rotate(7deg);}
+100% {-webkit-transform: rotate(-22deg);transform: rotate(-22deg);}
+}
+
+
+.forearm-wrap {
+	-webkit-animation-name: forearmWrap;
+	        animation-name: forearmWrap;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+@-webkit-keyframes forearmWrap{
+0% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+10% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+20% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+30% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+40% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+50% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+56% {-webkit-transform: rotate(-85deg);transform: rotate(-85deg);}
+59% {-webkit-transform: rotate(-165deg);transform: rotate(-165deg);
+	-webkit-animation-timing-function: ease-out;
+	        animation-timing-function: ease-out;}
+60% {-webkit-transform: rotate(-135deg);transform: rotate(-135deg);}
+64% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+77% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+90% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+100% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+}
+
+@keyframes forearmWrap{
+0% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+10% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+20% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+30% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+40% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+50% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+56% {-webkit-transform: rotate(-85deg);transform: rotate(-85deg);}
+59% {-webkit-transform: rotate(-165deg);transform: rotate(-165deg);
+	-webkit-animation-timing-function: ease-out;
+	        animation-timing-function: ease-out;}
+60% {-webkit-transform: rotate(-135deg);transform: rotate(-135deg);}
+64% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+77% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+90% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+100% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+}
+
+
+
+
+
+/* ------------ LEFT ARM -----------------*/
+
+.left-arm-wrap {
+	-webkit-animation-name: leftArmWrap;
+	        animation-name: leftArmWrap;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+ }
+
+
+
+.left-forearm-wrap {
+    -webkit-animation-name: leftForearmWrap;
+            animation-name: leftForearmWrap;
+}
+
+
+@-webkit-keyframes leftArmWrap{
+0% {-webkit-transform: rotate(-153deg);transform: rotate(-153deg);}
+10% {-webkit-transform: rotate(-174deg);transform: rotate(-174deg);}
+20% {-webkit-transform: rotate(-143deg);transform: rotate(-143deg);}
+30% {-webkit-transform: rotate(-154deg);transform: rotate(-154deg);}
+40% {-webkit-transform: rotate(-106deg);transform: rotate(-106deg);}
+50% {-webkit-transform: rotate(-116deg);transform: rotate(-116deg);}
+60% {-webkit-transform: rotate(-30deg);transform: rotate(-30deg);}
+67% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+70% {-webkit-transform: rotate(-130deg);transform: rotate(-130deg);}
+80% {-webkit-transform: rotate(-120deg);transform: rotate(-120deg);}
+87% {-webkit-transform: rotate(30deg);transform: rotate(30deg);}
+100% {-webkit-transform: rotate(-30deg);transform: rotate(-30deg);}
+}
+
+
+@keyframes leftArmWrap{
+0% {-webkit-transform: rotate(-153deg);transform: rotate(-153deg);}
+10% {-webkit-transform: rotate(-174deg);transform: rotate(-174deg);}
+20% {-webkit-transform: rotate(-143deg);transform: rotate(-143deg);}
+30% {-webkit-transform: rotate(-154deg);transform: rotate(-154deg);}
+40% {-webkit-transform: rotate(-106deg);transform: rotate(-106deg);}
+50% {-webkit-transform: rotate(-116deg);transform: rotate(-116deg);}
+60% {-webkit-transform: rotate(-30deg);transform: rotate(-30deg);}
+67% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+70% {-webkit-transform: rotate(-130deg);transform: rotate(-130deg);}
+80% {-webkit-transform: rotate(-120deg);transform: rotate(-120deg);}
+87% {-webkit-transform: rotate(30deg);transform: rotate(30deg);}
+100% {-webkit-transform: rotate(-30deg);transform: rotate(-30deg);}
+}
+
+
+@-webkit-keyframes leftForearmWrap{
+0% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+10% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+20% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+30% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+40% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+50% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+60% {-webkit-transform: rotate(-20deg);transform: rotate(-20deg);}
+70% {-webkit-transform: rotate(-0deg);transform: rotate(-0deg);}
+71.5% {-webkit-transform: rotate(-70deg);transform: rotate(-70deg);}
+73% {-webkit-transform: rotate(-0deg);transform: rotate(-0deg);}
+74.5% {-webkit-transform: rotate(-70deg);transform: rotate(-70deg);}
+76% {-webkit-transform: rotate(-4deg);transform: rotate(-4deg);}
+78% {-webkit-transform: rotate(-80deg);transform: rotate(-80deg);}
+80% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+90% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+100% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+}
+
+
+@keyframes leftForearmWrap{
+0% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+10% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+20% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+30% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+40% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+50% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+60% {-webkit-transform: rotate(-20deg);transform: rotate(-20deg);}
+70% {-webkit-transform: rotate(-0deg);transform: rotate(-0deg);}
+71.5% {-webkit-transform: rotate(-70deg);transform: rotate(-70deg);}
+73% {-webkit-transform: rotate(-0deg);transform: rotate(-0deg);}
+74.5% {-webkit-transform: rotate(-70deg);transform: rotate(-70deg);}
+76% {-webkit-transform: rotate(-4deg);transform: rotate(-4deg);}
+78% {-webkit-transform: rotate(-80deg);transform: rotate(-80deg);}
+80% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+90% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+100% {-webkit-transform: rotate(-40deg);transform: rotate(-40deg);}
+}
+
+
+
+/* ------------------- CLOUDS -------------------------*/
+
+.cloud {
+	position: absolute;
+	top: 900px;
+	left: 35%;
+	display: inline-block;
+	height: 100px;
+	width: 300px;
+	background: rgba(222, 222, 222, .4);
+	-webkit-animation-name: Cloud;
+	        animation-name: Cloud;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear; 
+	border-radius: 50%;
+}
+
+.cloud .cloud {
+	left: 50%;
+	-webkit-animation-delay: 2s;
+	        animation-delay: 2s;
+	background: rgba(202, 202, 202, .6);
+	width: 70%;
+	height: 50%;
+}
+
+.cloud .cloud + .cloud {
+	left: -80%;
+	width: 111%;
+	height: 130%;
+	background: rgba(233, 233, 233, .25);
+	-webkit-animation-delay: 12s;
+	        animation-delay: 12s;
+}
+
+.cloud + .cloud {
+	-webkit-animation-delay: 7.2s;
+	        animation-delay: 7.2s;
+}
+
+
+.cloud ~ .cloud {
+	-webkit-animation-delay: 4s;
+	        animation-delay: 4s;
+}
+
+
+@-webkit-keyframes Cloud{
+0% {-webkit-transform: translateY(0px);transform: translateY(0px);}
+10% {-webkit-transform: translateY(0px);transform: translateY(0px);}
+15% {-webkit-transform: translateY(-1000px);transform: translateY(-1000px);}
+100% {-webkit-transform: translateY(-1000px);transform: translateY(-1000px);}
+}
+
+
+@keyframes Cloud{
+0% {-webkit-transform: translateY(0px);transform: translateY(0px);}
+10% {-webkit-transform: translateY(0px);transform: translateY(0px);}
+15% {-webkit-transform: translateY(-1000px);transform: translateY(-1000px);}
+100% {-webkit-transform: translateY(-1000px);transform: translateY(-1000px);}
+}
+
+
