@@ -545,67 +545,51 @@ div {
 /* ------------------- CLOUDS -------------------------*/
 
 .cloud {
-	position: absolute;
 	top: 900px;
 	left: 35%;
 	display: inline-block;
-	height: 100px;
-	width: 300px;
+	height: 70px;
+	width: 195px;
+	margin-left: -100px;
+	border-radius: 50%;
 	background: rgba(222, 222, 222, .4);
 	-webkit-animation-name: Cloud;
 	        animation-name: Cloud;
 	-webkit-animation-timing-function: linear;
 	        animation-timing-function: linear; 
-	border-radius: 50%;
+
 }
 
-.cloud .cloud {
-	left: 50%;
-	top: 300px;
-	-webkit-animation-delay: 2s;
-	        animation-delay: 2s;
-	background: rgba(202, 202, 202, .6);
-	width: 70%;
-	height: 50%;
-}
 
-.cloud .cloud + .cloud {
-	left: -80%;
-	width: 111%;
-	height: 130%;
-	top: 500px;
+
+.cloud:nth-child(4n) {
 	background: rgba(233, 233, 233, .25);
-	-webkit-animation-delay: 12s;
-	        animation-delay: 12s;
+	animation-delay: 3s;
+	position: relative;
+	left: -100px;
 }
 
-.cloud + .cloud {
-	-webkit-animation-delay: 7.2s;
-	top: 400px;
-	        animation-delay: 7.2s;
+.cloud:nth-child(4n+1) {
+	background: rgba(202, 202, 202, .6);
+	animation-delay: 6.7s;
+	position: relative;
+	left: 66px;
+}
+
+.cloud:nth-child(4n+2) {
+	background: rgba(211, 211, 211, .49);
+	animation-delay: 12s;
+	position: relative;
+	left: 133px;
 }
 
 
-.cloud ~ .cloud {
-	-webkit-animation-delay: 4s;
-	        animation-delay: 4s;
-	        top: 700px;
-}
 
 
 @-webkit-keyframes Cloud{
-0% {-webkit-transform: translateY(0px);transform: translateY(-800px);}
-10% {-webkit-transform: translateY(0px);transform: translateY(-800px);}
-20% {-webkit-transform: translateY(-1000px);transform: translateY(-2000px);}
-100% {-webkit-transform: translateY(-1000px);transform: translateY(-2000px);}
+0% {-webkit-transform: translateY(1800px);transform: translateY(1800px);}
+38% {-webkit-transform: translateY(1800px);transform: translateY(1800px);}
+50% {-webkit-transform: translateY(-2000px);transform: translateY(-2000px);}
+100% {-webkit-transform: translateY(-2000px);transform: translateY(-2000px);}
 }
-
-
-@keyframes Cloud{
-0% {-webkit-transform: translateY(0px);transform: translateY(0px);}
-10% {-webkit-transform: translateY(0px);transform: translateY(0px);}
-15% {-webkit-transform: translateY(-1000px);transform: translateY(-1000px);}
-100% {-webkit-transform: translateY(-1000px);transform: translateY(-1000px);}
-}
-
 
